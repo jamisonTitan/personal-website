@@ -1,81 +1,52 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-}
-
 .scene {
   width: 200px;
   height: 200px;
   border: 1px solid #ccc;
-  margin: 80px;
-  perspective: 0px;
-  position: sticky;
-  top: 100px;
+  perspective: 400px;
 }
 
-.cube {
+.triangle {
   width: 200px;
   height: 200px;
-  position: absolute;
-  top: 100px;
+  border: 1px solid grey;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
   transition: transform 1s;
-  margin-top: 10rem;
-  margin-bottom: 300rem;
+  
 }
 
-.cube__face {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  line-height: 200px;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
+.triangle__face {
+  width: 0px;
+  height: 0px;
+  border-left:100px solid transparent;
+  border-right:100px solid transparent;
+  border-bottom:200px solid red;
 }
 
-.cube__face--front {
+.triangle__face--front {
   background: hsla(0, 100%, 50%, 0.7);
 }
-.cube__face--right {
+.triangle__face--right {
   background: hsla(60, 100%, 50%, 0.7);
 }
-.cube__face--back {
-  background: hsla(120, 100%, 50%, 0.7);
-}
-.cube__face--left {
+.triangle__face--left {
   background: hsla(180, 100%, 50%, 0.7);
 }
-.cube__face--top {
-  background: hsla(240, 100%, 50%, 0.7);
-}
-.cube__face--bottom {
+.triangle__face--bottom {
   background: hsla(300, 100%, 50%, 0.7);
 }
 
-.cube__face--front {
+.triangle__face--front {
   transform: rotateY(0deg) translateZ(100px);
 }
-.cube__face--right {
-  transform: rotateY(90deg) translateZ(100px);
+.triangle__face--right {
+  transform: rotateY(90deg) translateZ(100px) translateY(-100px);
 }
-.cube__face--back {
-  transform: rotateY(180deg) translateZ(100px);
-}
-.cube__face--left {
+.triangle__face--left {
   transform: rotateY(-90deg) translateZ(100px);
 }
-.cube__face--top {
+.triangle__face--bottom {
   transform: rotateX(90deg) translateZ(100px);
-}
-.cube__face--bottom {
-  transform: rotateX(-90deg) translateZ(100px);
 }
 
 label {
@@ -114,11 +85,10 @@ label {
   }
 }
 
-.cube {
-  /* animation: rotating 4s ease-in-out infinite; */
-  position: absolute;
+.triangle {
+  animation: rotating 4s ease-in-out infinite;
 }
 
-.cube__face {
+.triangle__face {
   /* animation: changingColors 0.5s infinite; */
 }
