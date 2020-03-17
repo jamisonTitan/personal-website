@@ -1,94 +1,346 @@
 .scene {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
+  margin-top: 2rem;
+  width: 300px;
+  height: 300px;
   perspective: 400px;
 }
 
-.triangle {
-  width: 200px;
-  height: 200px;
+@keyframes change_color {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: rgb(240, 240, 240);
+  }
+}
+
+body {
+  animation: change_color 30s ease-in-out infinite;
+}
+
+.navbar {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 10%;
+}
+
+.navbar button {
+  border: 1px solid gray;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: black;
+  border-radius: 3%;
+  color: white;
+  font-family: ubuntu;
+}
+
+.navbar button:hover {
+  transition: all 1s;
+  height: 36px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  color: black;
+}
+
+.header {
+  position: absolute;
+  left: 360px;
+  color: black;
+  font-family: Ubuntu;
+  font-size: 32px;
+  margin-bottom: 17rem;
+}
+
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 100%;
+  width: 250px;
+}
+
+.content-container {
+  position: absolute;
+  margin-top: 370px;
+}
+
+.blurb {
+  position: relative;
+  max-width: 650px;
+  left: 350px;
+  right: 10%;
+  border-bottom: 2px solid grey;
+  margin-bottom: 3rem;
+  color: rgb(30, 30, 30);
+}
+
+.slideshow-button {
+  position: relative;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 1rem;
+  background-color: black;
+  border-radius: 10%;
+  color: white;
+  font-family: ubuntu;
+  position: absolute;
+  top: 40%;
+}
+
+.slideshow-button:hover {
+  transition: all 1s;
+  height: 36px;
+  background-color: white;
+  color: black;
+}
+
+.last-slide {
+  left: 0;
+}
+
+.next-slide {
+  right: 0;
+}
+
+.project-link {
+  color: white;
+  font-family: ubuntu;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  @supports (mask-image: paint(smooth-corners)) {
+    .el.is-loaded {
+      border-radius: 0;
+      mask-image: paint(smooth-corners);
+      --smooth-corners: 3.6;
+    }
+  }
+}
+
+.github-link {
+  left: 9rem;
+  position: absolute;
+  bottom: 0;
   border: 1px solid grey;
+}
+
+.website-link {
+  position: absolute;
+  bottom: 0;
+  left: 4rem;
+  background-color: blueviolet;
+  color: black;
+}
+
+.website-link:hover {
+  transition: all 1s ease-in-out;
+  color: white;
+  border-radius: 7px;
+}
+
+.github-link:hover {
+  transition: all 1s ease-in-out;
+  color: black;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.info-paragraph-container {
+}
+
+.project-images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 250px;
+  max-height: 250px;
+  margin: 0.5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  @supports (mask-image: paint(smooth-corners)) {
+    .el.is-loaded {
+      border-radius: 0;
+      mask-image: paint(smooth-corners);
+      --smooth-corners: 3.6;
+    }
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.project-descriptions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+.project-desc {
+  padding: 1rem;
+  color: black;
+  font-family: ubuntu;
+  border-radius: 10px;
+  display: none;
+  @supports (mask-image: paint(smooth-corners)) {
+    .el.is-loaded {
+      border-radius: 0;
+      mask-image: paint(smooth-corners);
+      --smooth-corners: 3.6;
+    }
+  }
+}
+
+.projects-container {
+  margin-top: 8rem;
+  background-color: orangered;
+  margin-left: 240px;
+  padding-left: 10%;
+  padding-top: 1rem;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.slideshow {
+}
+
+.slide {
+  display: none;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.slide-img {
+  display: none;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.paragraph-header {
+  padding-bottom: 0.5rem;
+  font-weight: bolder;
+  font-family: ubuntu;
+  padding-left: 30%;
+  padding-top: 2px;
+}
+
+.projects-header {
+  color: white;
+}
+
+@supports (mask-image: paint(smooth-corners)) {
+  .el.is-loaded {
+    border-radius: 0;
+    mask-image: paint(smooth-corners);
+    --smooth-corners: 3.6;
+  }
+}
+
+.info-paragraph {
+  padding: 0.5rem;
+}
+
+.header-underline {
+  background-color: rgb(200, 0, 0);
+  color: rgb(200, 0, 0);
+  height: 2px;
+}
+.cube {
+  position: absolute;
+  width: 100px;
+  height: 100px;
   transform-style: preserve-3d;
-  transform: translateZ(-100px);
+  transform: translateZ(-200px);
   transition: transform 1s;
-  
 }
 
-.triangle__face {
-  width: 0px;
-  height: 0px;
-  border-left:100px solid transparent;
-  border-right:100px solid transparent;
-  border-bottom:200px solid red;
+.right {
+  left: 100px;
 }
 
-.triangle__face--front {
-  background: hsla(0, 100%, 50%, 0.7);
-}
-.triangle__face--right {
-  background: hsla(60, 100%, 50%, 0.7);
-}
-.triangle__face--left {
-  background: hsla(180, 100%, 50%, 0.7);
-}
-.triangle__face--bottom {
-  background: hsla(300, 100%, 50%, 0.7);
+.middleX {
+  left: 50px;
 }
 
-.triangle__face--front {
-  transform: rotateY(0deg) translateZ(100px);
-}
-.triangle__face--right {
-  transform: rotateY(90deg) translateZ(100px) translateY(-100px);
-}
-.triangle__face--left {
-  transform: rotateY(-90deg) translateZ(100px);
-}
-.triangle__face--bottom {
-  transform: rotateX(90deg) translateZ(100px);
+.middleY {
+  top: 100px;
 }
 
+.middleZ {
+  transition: transform 0s;
+  transform: translateZ(-50px);
+}
+
+.back {
+  transition: transform 0s;
+  transform: translateZ(-100px);
+}
+
+.bottom {
+  top: 150px;
+}
+
+.square__face {
+  width: 100px;
+  height: 100px;
+  border: solid 1px blueviolet;
+}
+
+.square__face--front {
+  transform: rotateY(0deg) translateZ(50px);
+}
+.square__face--right {
+  transform: rotateY(90deg) translateZ(50px) translateY(-200px);
+}
+.square__face--left {
+  transform: rotateY(-90deg) translateZ(50px) translateY(-300px);
+}
+.square__face--bottom {
+  transform: rotateX(90deg) translateZ(50px);
+}
+.square__face--back {
+  transform: rotateY(180deg) translateZ(50px) translateY(-400px);
+}
 label {
   margin-right: 10px;
 }
 
-@keyframes changingColors {
-  0% {
-    color: red;
-    background-color: black;
-  }
-  50% {
-    color: white;
-    background-color: black;
-  }
-  100% {
-    color: black;
-    background-color: red;
-  }
-}
-
 @keyframes rotating {
-  0% {
-    transform: translateZ(-100px) rotateY(0deg);
-    /* transform: translateZ(-100px) rotateX(0deg); */
+  from {
+    transform: translateZ(-100px) rotateX(0deg);
   }
-  33% {
-    transform: translateZ(-100px) rotateY(360deg);
-    /* transform: translateZ(-100px) rotateX(360deg); */
-  }
-  66% {
-    /* transform: translateZ(-100px) rotateX(0deg); */
-  }
-  100% {
-    /* transform: translateZ(-100px) rotateX(360deg); */
+  to {
+    transform: translateZ(-100px) rotateX(360deg);
   }
 }
 
-.triangle {
+.scene {
+  transform-style: preserve-3d;
   animation: rotating 4s ease-in-out infinite;
 }
 
-.triangle__face {
-  /* animation: changingColors 0.5s infinite; */
+.cube {
+  /* animation: rotating 8s ease-in-out infinite; */
 }
