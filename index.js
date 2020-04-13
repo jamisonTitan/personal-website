@@ -3,7 +3,9 @@ $(document).ready(() => {
   const showDivs = n => {
     let i;
     let slides = $(".slide").toArray();
-    let slideDescriptions = $(".project-desc").toArray();
+    let descriptions = $(".project-desc").toArray();
+    let websiteLinks = ["https://jamisontitan.github.io/arpeggio.io/", "https://jamisontitan.github.io/mtgDeckHelp/"];
+    let githubLinks = ["https://github.com/jamisonTitan/arpeggio.io", "https://github.com/jamisonTitan/mtgDeckHelp"];
     console.log(slides);
     if (n > slides.length) {
       slideIndex = 1;
@@ -13,10 +15,12 @@ $(document).ready(() => {
     }
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-      slideDescriptions[i].style.display = "none";
+      descriptions[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
-    slideDescriptions[slideIndex - 1].style.display = "block";
+    descriptions[slideIndex - 1].style.display = "block";
+    $('.github-link').attr("href", githubLinks[slideIndex - 1]);
+    $('.website-link').attr("href", websiteLinks[slideIndex - 1]);
   };
 
   const changeSlide = n => {
@@ -34,12 +38,23 @@ $(document).ready(() => {
     changeSlide(-1);
   });
 
+  const resizeBlurbs = () => {
+    let maxWidth = window.innerWidth - 500;
+    $(".blurb").css("max-width", maxWidth + "px");
+  }
+
   showDivs(slideIndex);
   $(window).resize(() => {
-    let maxWidth = window.innerWidth - 500;
-    console.log(maxWidth);
-    $(".blurb").css("max-width", maxWidth + "px");
-    $(".projects-container").css("width", html.innerWidth);
-    $(".contact-container").css("width", html.innerWidth);
+    resizeBlurbs();
   });
+  resizeBlurbs();
+  $('.about-btn').on('click', () => {
+    window.location.hash = 'about-anchor';
+  })
+  $('.contact-btn').on('click', () => {
+    window.location.hash = 'contact-anchor';
+  })
+  $('.projects-btn').on('click', () => {
+    window.location.hash = 'projects-anchor';
+  })
 });

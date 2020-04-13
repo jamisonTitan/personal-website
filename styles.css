@@ -153,21 +153,18 @@ body {
   border-radius: 7px;
 }
 
-.info-paragraph-container {
-}
-
 .project-images {
   position: relative;
   display: flex;
   justify-content: center;
-  max-width: 250px;
+  max-width: 350px;
   max-height: 250px;
   margin: 0.5rem;
   padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 3rem;
-  border: 1px solid grey;
+  border: 1px solid black;
   border-radius: 10px;
   @supports (mask-image: paint(smooth-corners)) {
     .el.is-loaded {
@@ -206,12 +203,37 @@ body {
   }
 }
 
+.projecct-desc-text-divider {
+  color:white;
+}
+
+.slide-indicators-holder {
+  margin-left:150px;
+}
+
+.slide-indicator {
+  border:2px black solid;
+  color: orangered;
+}
+
 .projects-container {
   margin-top: 8rem;
   background-color: orangered;
   margin-left: 240px;
   padding-left: 10%;
   padding-top: 1rem;
+  padding-bottom:7rem;
+}
+
+.contact-container {
+  margin-top: 8rem;
+  margin-left: 240px;
+  padding-left: 10%;
+  margin-bottom:20rem;
+}
+
+.icons-container {
+  padding-left: 30%;
 }
 
 @keyframes fade {
@@ -223,18 +245,16 @@ body {
   }
 }
 
-.slideshow {
-}
-
 .slide {
   display: none;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 350px;
+  min-height:250px;
+  max-height: 350px;
 }
 
 .slide-img {
   display: none;
-  max-width: 250px;
+  max-width: 350px;
   max-height: 250px;
 }
 
@@ -338,9 +358,19 @@ label {
 
 .scene {
   transform-style: preserve-3d;
-  animation: rotating 4s ease-in-out infinite;
+  animation: rotating 512s ease-in-out infinite;
 }
 
 .cube {
-  /* animation: rotating 8s ease-in-out infinite; */
+   animation: rotating 8s ease-in-out infinite; 
+}
+
+
+.icon {
+  color:black;
+  margin-right:1rem;
+}
+
+.icon:hover {
+  color:blueviolet
 }

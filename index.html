@@ -1,300 +1,344 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Titan Jamison</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <div>
-      <div class="header">
-        <h1>
+<head>
+  <meta charset="UTF-8" />
+  <title>Titan Jamison</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div>
+    <div class="header">
+      <h1>
+        <strong>
+          Emmett <br />
+          Titan <br />
+          Jamison
+        </strong>
+      </h1>
+      <hr class="header-underline" />
+    </div>
+    <div class="content-container">
+      <div class="info-paragraph-container blurb">
+        <p class="info-paragraph">
+          <a id="about-anchor"></a>
+          <strong>About Me</strong> <br />
+          <br />
+          I am a professional programmer and web-designer. I am
+          quality-oriented take pride in whatever I do. Being a San Francisco
+          native I’ve seen first-hand the negative impacts that tech companies
+          can have if they are not community driven and ethics based. Because
+          of this I am resolute on finding the intersection between social
+          justice and tech.<br /><br />
+          <strong>Experience</strong>
+          <br /><br />
+          - LAUNCHDARKLY PRODUCT DELIVERY INTERN: I spent the summer of 2019-2020 writing frontend production code for a
+          forward-thinking and innovative
+          company
+          called LaunchDarkly. I
+          used React.js,  Typescript, and
+          Redux. Some things I built were A landing page for a react component style guide A bookmarked customers and
+          recently viewed customers features in an  internal application used to keep track
+          of customers data. This app is used  everyday by their sales team of close to 50 people. 
+          <br /><br />
+          - MEMBER OF THE NATIONAL SOCIETY OF COLLEGIATE SCHOLARS: (NSCS) at University of San Francisco. Invitation
+          only
+          and
+          selected
+          among the top 10% of the nation’s most capable first-and-second year academic achievers. Membership represents
+          my commitment to scholarship, leadership and community service.
+          <br /><br />
+          - UNIVERSITY OF SAN FRANCISCO STUDENT: In addition to being a hobbyist programmer for the majority of my
+          teenage years I also have
+          taken classes from industry professionals at CodeNation and am continuing my education with a university level
+          Computer Science bachelors degree at University of San Francisco.
+        </p>
+      </div>
+
+      <div class="projects-container">
+        <a id="projects-anchor"></a>
+        <div class="paragraph-header projects-header">
           <strong>
-            Emmett <br />
-            Titan <br />
-            Jamison
+            <h3>Projects</h3>
           </strong>
-        </h1>
-        <hr class="header-underline" />
-      </div>
-      <div class="content-container">
-        <div class="info-paragraph-container blurb">
-          <p class="info-paragraph">
-            I am a professional and hobbyist programmer and web-designer. I am
-            quality-oriented take pride in whatever I do. Being a San Francisco
-            native I’ve seen first-hand the negative impacts that tech companies
-            can have if they are not community driven and ethics based. Because
-            of this I am resolute on finding the intersection between social
-            justice and tech.
-          </p>
         </div>
-
-        <div class="projects-container">
-          <div class="paragraph-header projects-header">
-            <strong><h3>Projects</h3></strong>
+        <div class="projects">
+          <div class="project-images slideshow">
+            <img class="slide" src="bin/arpeggio.png" />
+            <img class="slide" src="bin/mtg-img.png" />
+            <button class="last-slide slideshow-button">
+              &#10094;
+            </button>
+            <button class="next-slide slideshow-button">
+              &#10095;
+            </button>
+            <a href="#" class="website-link project-link">
+              <div class="project-link-text">Website</div>
+            </a>
+            <a href="#" class="github-link project-link">
+              <div class="project-link-text">Github</div>
+            </a>
           </div>
-          <div class="projects">
-            <div class="project-images slideshow">
-              <img class="slide" src="bin/arpeggio.png" />
-              <img class="slide" src="bin/mtg-img.png" />
-              <button class="last-slide slideshow-button">
-                &#10094;
-              </button>
-              <button class="next-slide slideshow-button">
-                &#10095;
-              </button>
-              <a href="#" class="website-link project-link">
-                <div class="project-link-text">Website</div>
-              </a>
-              <a href="#" class="github-link project-link">
-                <div class="project-link-text">Github</div>
-              </a>
-            </div>
-            <div class="project-descriptions">
-              <div class="project-desc">
-                <div class="project-desc-text">
-                  <strong>Arpeggio.io</strong> <br />
-                  <hr />
-                  Arpeggiator and Synthesizer made with the Javascript web audio api and plain html, jquery, and css. with fun input fields! And its pink! and cute! I am so enthused! 
-                </div>
+          <div class="project-descriptions">
+            <div class="project-desc">
+              <div class="project-desc-text">
+                <strong>Arpeggio.io</strong> <br />
+                <hr class="project-desc-text-divider" />
+                Arpeggiator and Synthesizer made with the Javascript web audio api and plain html, jquery, and css. with
+                fun input fields! And its pink! and cute! I am so enthused!
               </div>
-              <div class="project-desc">
-                <div class="project-desc-text">
-                  <strong>MTG deck helper</strong> <br />
-                  <hr />
-                  magic the gathering trading card game deck building resource built with bootstrap. Search engine for cards and shows you each cards power to cost ratio. 
-                </div>
+            </div>
+            <div class="project-desc">
+              <div class="project-desc-text">
+                <strong>MTG deck helper</strong> <br />
+                <hr />
+                magic the gathering trading card game deck building resource built with bootstrap. Search engine for
+                cards and shows you each cards power to cost ratio.
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </div>
       <div class="contact-container">
-        <div class="paragraph-header">
-          <strong><h3>Contact</h3></strong>
+        <div class="paragraph-header contacts-header">
+          <strong>
+            <h3>Contact</h3>
+            <a id="contact-anchor"></a>
+          </strong>
         </div>
+        <div class="icons-container">
+          <a href="https://github.com/jamisonTitan">
+            <i class="icon fa-3x fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/titan-jamison-50b979183/">
+            <i class="icon fa-3x fab fa-linkedin">
+            </i>
+          </a>
+          <p>
+            <strong>Email</strong>
+            <br />jamisontitan@gmail.com
+            <br /><strong>Phone</strong>
+            <br />(415)320-3905
+          </p>
+        </div>
+        <div class="sidebar-container">
+          <div class="scene">
+            <!-- front top row -->
+            <div class="cube">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
 
-      </div>
-      <div class="sidebar-container">
-        <div class="scene">
-          <!-- front top row -->
-          <div class="cube">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-
-          <div class="cube middleX">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube right">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <!-- middle front row -->
-          <div class="cube middleX">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube middleX mi
+            <div class="cube middleX">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube right">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <!-- middle front row -->
+            <div class="cube middleX">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube middleX mi
           widthddleY">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube middleX right">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <!-- bottom front row -->
+            <div class="cube bottom">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__facWindow.heighte square__face--back"></div>
+            </div>
+            <div class="cube bottom middleX">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube bottom right">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <!-- middle top row -->
+            <div class="cube middleZ">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube middleZ middleX">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube middleZ right">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <!-- middle middle row -->
+            <div class="cube middleZ middleY">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube middleY middleZ middleX">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube middleY middleY right">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <!-- middle bottom row -->
+            <div class="cube middleY bottom">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube middleY middleX bottom">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube middleY bottom right">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <!-- back top row -->
+            <div class="cube back">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube back middleX">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube back right">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <!-- back middle row -->
+            <div class="cube back middleY">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube back middleY middleX">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube back middleY right">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <!-- back bottom row -->
+            <div class="cube back bottom middleX">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube back bottom middleY">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
+            <div class="cube back bottom right">
+              <div class="square__face square__face--front"></div>
+              <div class="square__face square__face--bottom"></div>
+              <div class="square__face square__face--right"></div>
+              <div class="square__face square__face--left"></div>
+              <div class="square__face square__face--back"></div>
+            </div>
           </div>
-          <div class="cube middleX right">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
+          <div class="navbar">
+            <button class='about-btn'>About</button>
+            <button class='projects-btn'>Projects</button>
+            <button class='contact-btn'>Contact</button>
           </div>
-          <!-- bottom front row -->
-          <div class="cube bottom">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__facWindow.heighte square__face--back"></div>
-          </div>
-          <div class="cube bottom middleX">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube bottom right">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <!-- middle top row -->
-          <div class="cube middleZ">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube middleZ middleX">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube middleZ right">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <!-- middle middle row -->
-          <div class="cube middleZ middleY">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube middleY middleZ middleX">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube middleY middleY right">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <!-- middle bottom row -->
-          <div class="cube middleY bottom">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube middleY middleX bottom">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube middleY bottom right">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <!-- back top row -->
-          <div class="cube back">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube back middleX">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube back right">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <!-- back middle row -->
-          <div class="cube back middleY">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube back middleY middleX">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube back middleY right">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <!-- back bottom row -->
-          <div class="cube back bottom middleX">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube back bottom middleY">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-          <div class="cube back bottom right">
-            <div class="square__face square__face--front"></div>
-            <div class="square__face square__face--bottom"></div>
-            <div class="square__face square__face--right"></div>
-            <div class="square__face square__face--left"></div>
-            <div class="square__face square__face--back"></div>
-          </div>
-        </div>
-        <div class="navbar">
-          <button>Projects</button>
-          <button>About</button>
-          <button>Contact</button>
-        </div>
         </div>
         <script src="index.js"></script>
+      </div>
     </div>
-  </body>
+</body>
+
 </html>
